@@ -5,9 +5,9 @@ import { Cargo } from './cargo';
 export class Rocket {
     name: string;
     totalCapacityKg: number;
-    cargoItems: Cargo[];
-    astronauts: Astronaut[];
-
+    cargoItems: Cargo[] = [];
+    astronauts: Astronaut[] = [];
+    
     constructor(name: string, totalCapacityKg: number){
         this.name = name;
         this.totalCapacityKg = totalCapacityKg;
